@@ -32,14 +32,19 @@ public class crudservice {
 
 	
 	public crudmodel insertUser(crudmodel user) {
-		String insert = "insert into person(name,age) values(?,?) ";
+		String insert = "insert into person(name,nic,address,telNo,accNo) values(?,?) ";
 		
 		try {
 			PreparedStatement ps = con.prepareStatement(insert);
+			
 			ps.setString(1, user.getName());
-			ps.setLong(2, user.getAge());
+			ps.setString(2, user.getNic());
+			ps.setString(3, user.getAddress());
+			ps.setInt(4, user.getTelNo());
+			ps.setInt(5, user.getAccNo());
 			
 			ps.execute();
+			
 		}catch(Exception e) {
 			System.out.println(e +"data insert unsuccess.");
 		}
@@ -58,9 +63,12 @@ public class crudservice {
 		
 		while(rs.next()) {
 			crudmodel model = new crudmodel();
-			
-			model.setName(rs.getString("name")); // column name
-			model.setAge(rs.getInt("age"));
+													// column name
+			model.setName(rs.getString("name"));
+			model.setNic(rs.getString("nic"));
+			model.setAddress(rs.getString("address"));
+			model.setTelNo(rs.getInt("telNo"));
+			model.setAccNo(rs.getInt("accNo"));
 			
 			data.add(model);
 			
@@ -83,20 +91,27 @@ public class crudservice {
 			crudmodel model = new crudmodel();
 			
 			model.setName(rs.getString("name")); // column name
-			model.setAge(rs.getInt("age"));		
+			model.setNic(rs.getString("nic"));
+			model.setAddress(rs.getString("address"));
+			model.setTelNo(rs.getInt("telNo"));
+			model.setAccNo(rs.getInt("accNo"));
+			
 			data.add(model);		
 		}		
 		return data;	
 	}
 	
 	public crudmodel updatetUser(crudmodel user) {
-		String insert = "update person set name=? , age=? where id =?";
+		String insert = "update person set name=? , nic=? , address=? , telNo=? , accNo=?  where id =?";
 		
 		try {
 			PreparedStatement ps = con.prepareStatement(insert);
 			ps.setString(1, user.getName());
-			ps.setLong(2, user.getAge());
-			ps.setInt(3, user.getId());
+			ps.setString(2, user.getNic());
+			ps.setString(3, user.getAddress());
+			ps.setInt(4, user.getTelNo());
+			ps.setInt(5, user.getAccNo());
+			ps.setInt(6, user.getId());
 			
 			ps.executeUpdate();
 		}catch(Exception e) {
