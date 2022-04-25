@@ -22,16 +22,16 @@ public class postbillmodel {
 		return billID;
 	}
 	
-	public void setBillID(int billID) {
-		this.billID = billID;
+	public void setBillID(long l) {
+		this.billID = l;
 	}
 	
 	//Bill Number Getter and Setter
 	public int getBillnumber() {
 		return billnumber;
 	}
-	public void setBillnumber(int billnumber) {
-		this.billnumber = billnumber;
+	public void setBillnumber(long l) {
+		this.billnumber = l;
 	}
 	
 
