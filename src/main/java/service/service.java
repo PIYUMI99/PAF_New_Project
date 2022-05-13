@@ -20,6 +20,7 @@ public class service {
 	@Path("/insert") 
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED) 
 	@Produces(MediaType.TEXT_PLAIN) 
+	
 	public String insertService
 	(@FormParam("name") String name, 
 	 @FormParam("nic") String nic, 
@@ -34,6 +35,7 @@ public class service {
 	@GET
 	@Path("/read") 
 	@Produces(MediaType.TEXT_HTML) 
+	
 	public String readService() 
 	 { 
 	 return serviceObj.readService(); 
@@ -43,6 +45,7 @@ public class service {
 	@Path("/update") 
 	@Consumes(MediaType.APPLICATION_JSON) 
 	@Produces(MediaType.TEXT_PLAIN) 
+	
 	public String updateService(String serviceData) 
 	{ 
 	//Convert the input string to a JSON object 
@@ -62,6 +65,7 @@ public class service {
 	@Path("/delete") 
 	@Consumes(MediaType.APPLICATION_XML) 
 	@Produces(MediaType.TEXT_PLAIN) 
+	
 	public String deleteService(String serviceData) 
 	{ 
 	//Convert the input string to an XML document
