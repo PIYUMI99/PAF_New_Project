@@ -5,7 +5,7 @@
 }
 
 body{
-background-image:url("../images/image2.jpg");
+background-image:url("../images/image6.jpg");
 background-repeat: no-repeat;
 background-size: 1920px 950px;
 background-size:100%;
@@ -22,14 +22,14 @@ background-size: cover;
 .font1{
 	
 	font-family:cursive;
-	color: black;
+	color: rgb(255, 255, 255);
 	text-align:center;
 	font-size:30px;
 }
 
 .font2{
 	
-	color: rgb(0, 0, 0)79;
+	color:white;
 	font-size: 18px;
 }
 
