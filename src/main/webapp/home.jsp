@@ -11,22 +11,28 @@
 <br>
 <br>
 <br>
-<h2 form class="font1"><center> Electro-Grid</center></h2>
+<h1 form class="font1"><center> Electro-Grid</center></h1>
 <body>
 <br> 
 <br>
-
+<br>
+<br>
 <center>
 	<ul class="font2">
-	<h2>ABC vehicle rental offers the cheapest online rentel vehicle details </h2>
-	<h3>Creers at ABC vehicle rentel company</h3>
+	<h2>What is the electrical grid called?</h2>
+	<br>
+	<br>
+	<h3>Whether you call it the power grid, power distribution grid, electrical grid, or national grid, this electrical network generates and distributes electricity across a large area. The network includes energy utility companies and energy suppliers that deliver electricity to your home or business.</h3>
  	</ul>
 </center>
 <br>
-
-	<tr>
-        <td colspan="6"><input type="submit" class="submit" value="Register" /></td>
-      </tr>	
+<br> 
+<br>
+<br>
+<br>
+	
+        <center><input type="submit" class="submit" value="Register" /></center>
+ 	
 
 </div>
 <br>
