@@ -5,6 +5,7 @@
 <html>
 <head>   
 <link rel="stylesheet" href="css/styles.css">
+<title>Register Page</title>
 
    <div class="container">
   <h1> Registration Form</h1>
