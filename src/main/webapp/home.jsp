@@ -11,8 +11,16 @@
 <br>
 <br>
 <br>
-<h1 form class="font1"><center> Electro-Grid</center></h1>
+<br> 
+<br>
+<br>
+<br>
+		<h1 form class="font1"><center> Electro-Grid</center></h1>
 <body>
+<br> 
+<br>
+<br>
+<br>
 <br> 
 <br>
 <br>
@@ -31,7 +39,7 @@
 <br>
 <br>
 	
-        <center><input type="submit" class="submit" value="Register" /></center>
+        <center><button class="button button1">Rrgister</button></center>
  	
 
 </div>

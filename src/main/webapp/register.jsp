@@ -29,10 +29,7 @@
       </tr>
 		<td><label for="accNo">Account Number:</label></td>
         <td><input type="text" name="accNo" id="accNo" placeholder="Enter your accNo"></td>
-      <tr>
-        <td><label for="about">About:</label></td>
-        <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
-      </tr>
+
       <tr>
         <td colspan="6"><input type="submit" class="submit" value="Register" /></td>
       </tr>

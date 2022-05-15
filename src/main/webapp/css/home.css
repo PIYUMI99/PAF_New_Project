@@ -92,14 +92,18 @@ div.layout {
 
 }
 
-.registartion-form .submit {
-  width: 100%;
-  padding: 8px 0;
-  font-size: 20px;
-  color: rgb(44, 44, 44);
-  background-color: #ffffff;
-  border-radius: 5px;
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+.button1 {background-color: #4CAF50;}
 
 .registartion-form .submit:hover {
   box-shadow: 3px 3px 6px rgb(255, 214, 176);
